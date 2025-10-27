@@ -13,7 +13,7 @@ const HeroSlider = () => {
       <div className="hero">
         <div className="container">
           <Swiper
-          loop={true}
+          loop={false}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
