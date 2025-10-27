@@ -3,7 +3,6 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
 import { Autoplay , Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 
@@ -34,7 +33,7 @@ const HeroSlider = () => {
                   Shop now
                 </Link>
               </div>
-              <img src="/src/img/banner_Hero1.jpg" alt="" />
+              <img src="/img/banner_Hero1.jpg" alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
@@ -49,7 +48,7 @@ const HeroSlider = () => {
                   Shop now
                 </Link>
               </div>
-              <img src="/src/img/banner_Hero2.jpg" alt="" />
+              <img src="/img/banner_Hero2.jpg" alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
@@ -64,7 +63,7 @@ const HeroSlider = () => {
                   Shop now
                 </Link>
               </div>
-              <img src="/src/img/banner_Hero3.jpg" alt="" />
+              <img src="/img/banner_Hero3.jpg" alt="" />
             </SwiperSlide>
           </Swiper>
         </div>
