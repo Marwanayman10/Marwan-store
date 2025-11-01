@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router-dom"
 import Bottomheader from "./components/header/Bottomheader"
 import Topheader from "./components/header/Topheader"
-import Home from "./page/home/Home"
-import ProductDetails from "./page/ProductDetails/ProductDetails.jsx";
-import Cart from "./page/cart/Cart.jsx";
+import Home from "./pages/home/Home.jsx"
+import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
+import Cart from "./pages/cart/Cart.jsx";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import { AnimatePresence } from "framer-motion";
-import CategoryPage from "./page/CategoryPage/CategoryPage.jsx";
-import SearchResults from "./page/SearchResults.jsx";
-import Favorites from "./page/favorites/Favorites.jsx";
+import CategoryPage from "./pages/CategoryPage/CategoryPage.jsx";
+import SearchResults from "./pages/SearchResults.jsx";
+import Favorites from "./pages/favorites/Favorites.jsx";
 
 
 function App() {
