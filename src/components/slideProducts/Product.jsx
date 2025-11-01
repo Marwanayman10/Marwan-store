@@ -10,7 +10,7 @@ function Product({item}) {
 
   const navigate = useNavigate()
 
-  const {cartItems , addToCart} = useContext(CartContext)
+  const {cartItems , addToCart , addToFavorites , favorites , removeFromFavorites} = useContext(CartContext)
 
   const isInCart = cartItems.some(i=> i.id === item.id);
 
@@ -32,6 +32,24 @@ function Product({item}) {
       ,{duration : 3500}
      )
 
+  }
+
+
+  //favorites
+
+   const isInFav = favorites.some(i=> i.id === item.id);
+
+  const handleAddToFav = ()=> {
+    if(isInFav) {
+      removeFromFavorites(item.id)
+       toast.error(`${item.title} removed From Favorites `)
+
+    }else{
+       addToFavorites(item)
+    toast.success(`${item.title} added To favorites`)
+
+    }
+   
   }
   
   
@@ -61,7 +79,7 @@ function Product({item}) {
        
              <div className="icons">
                 <span className='btn_cart' onClick={handleAddToCart}><FaCartArrowDown /></span>
-                <span><FaRegHeart /> </span>
+                <span className={`${isInFav ? "in-fav" : ""}`} onClick={handleAddToFav}><FaRegHeart /> </span>
                 <span><FaShare /></span>
              </div>
 

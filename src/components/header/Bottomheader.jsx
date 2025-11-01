@@ -19,6 +19,10 @@ const Bottomheader = () => {
 
   const [isCategoryOpen,setisCategoryOpen] =useState(false)
 
+  useEffect (() => {
+    setisCategoryOpen(false)
+  },[location])
+
   useEffect(() => {
     fetch("https://dummyjson.com/products/categories")
       .then((res) => res.json())
@@ -40,7 +44,7 @@ const Bottomheader = () => {
 
           <div className={`category_nav_list ${isCategoryOpen ? "active" : ""} `}>
             {categories.map((category) => (
-              <Link  key={category.slug} to={category.slug}>{category.name}</Link>
+              <Link  key={category.slug} to={`category/${category.slug}`}>{category.name}</Link>
             ))}
           </div>
 

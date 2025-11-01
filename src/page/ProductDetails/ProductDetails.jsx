@@ -6,7 +6,7 @@ import ProductDetailsLoading from "./productDetailsLoading";
 import SlideProductLoading from "../../components/slideProducts/SlideProductLoading";
 import ProductImages from "./ProductImages";
 import ProductInfo from "./ProductInfo";
-import PageInimation from "../../components/PageInimation";
+import PageTransition from "../../components/PageTransition";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -47,7 +47,7 @@ const ProductDetails = () => {
   if (!product) return <p>product Non Found</p>;
 
   return (
-   <PageInimation key={id}>
+   <PageTransition key={id}>
      <div>
       {loading ? (
         <ProductDetailsLoading />
@@ -72,7 +72,7 @@ const ProductDetails = () => {
         />
       )}
     </div>
-   </PageInimation>
+   </PageTransition>
   );
 };
 

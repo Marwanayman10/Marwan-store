@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../../components/context/CartContext";
 import { FaTrashAlt } from "react-icons/fa";
 import "./Cart.css";
-import PageInimation from "../../components/PageInimation";
+import PageTransition from "../../components/PageTransition";
 
 function Cart() {
   const { cartItems, increaseQuantity, decreaseQuantity, removeFromCart } =
@@ -15,7 +15,7 @@ function Cart() {
   );
 
   return (
-    <PageInimation>
+    <PageTransition>
       <div>
         <div className="checkout">
           <div className="ordersummary">
@@ -70,7 +70,7 @@ function Cart() {
           </div>
         </div>
       </div>
-    </PageInimation>
+    </PageTransition>
   );
 }
 

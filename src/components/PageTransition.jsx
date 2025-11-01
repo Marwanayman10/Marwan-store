@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-function PageInimation({children}) {
+function PageTransition({children}) {
   return (
     <motion.div
         initial={{opacity:0, y: 20}}  //start
@@ -15,4 +15,4 @@ function PageInimation({children}) {
   )
 }
 
-export default PageInimation
+export default PageTransition

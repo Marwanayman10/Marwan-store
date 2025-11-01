@@ -7,6 +7,11 @@ import Cart from "./page/cart/Cart.jsx";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import { AnimatePresence } from "framer-motion";
+import CategoryPage from "./page/CategoryPage/CategoryPage.jsx";
+import SearchResults from "./page/SearchResults.jsx";
+import Favorites from "./page/favorites/Favorites.jsx";
+
+
 function App() {
 
   return (
@@ -34,19 +39,14 @@ function App() {
     <Routes>
         <Route path="/"element={ <Home/>}/>
         <Route path="/cart"element={ <Cart/>}/>
+        <Route path="/search"element={ <SearchResults/>}/>
+        <Route path="/favorites"element={ <Favorites/>}/>
         <Route path="/products/:id"element={ <ProductDetails/>}/>
+        <Route path="/category/:category"element={ <CategoryPage/>}/>
     </Routes>
-
     </AnimatePresence>
-
-
-
-
-  
-    
-  
     </>
-  )
+  );
 }
 
 export default App

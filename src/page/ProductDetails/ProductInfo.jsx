@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 function ProductInfo({product}) {
 
-    const {cartItems , addToCart} = useContext(CartContext)
+    const {cartItems , addToCart , addToFavorites , favorites , removeFromFavorites }  = useContext(CartContext)
 
      const isInCart = cartItems.some(i=> i.id === product.id);
 
@@ -32,6 +32,25 @@ function ProductInfo({product}) {
      )
 
   }
+
+  
+  //favorites
+
+   const isInFav = favorites.some(i=> i.id === product.id);
+
+  const handleAddToFav = ()=> {
+    if(isInFav) {
+      removeFromFavorites(product.id)
+       toast.error(`${product.title} removed From Favorites `)
+
+    }else{
+       addToFavorites(product)
+    toast.success(`${product.title} added To favorites`)
+
+    }
+   
+  }
+  
 
   return (
      <div className="details_item">
@@ -67,9 +86,10 @@ function ProductInfo({product}) {
            </button>
 
            <div className="icons">
-             <span>
-               <FaRegHeart />{" "}
-             </span>
+             <span className={`${isInFav ? "in-fav" : ""}`} onClick={handleAddToFav}>
+               <FaRegHeart />
+               </span>
+            
              <span>
                <FaShare />
              </span>

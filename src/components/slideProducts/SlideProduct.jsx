@@ -7,16 +7,12 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const SlideProduct = ({ data, title }) => {
-  console.log(data);
 
   return (
     <div className="slide_products slide">
       <div className="container">
         <div className="top_slide">
           <h2>{title}</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quo!
-          </p>
         </div>
         <Swiper
           loop={true}

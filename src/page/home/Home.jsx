@@ -3,7 +3,7 @@ import Heroslider from "../../components/HeroSlider";
 import "./home.css";
 import SlideProduct from "../../components/slideProducts/SlideProduct";
 import SlideProductLoading from "../../components/slideProducts/SlideProductLoading";
-import PageInimation from "../../components/PageInimation";
+import PageTransition from "../../components/PageTransition";
 
 const categories = [
   "smartphones",
@@ -45,7 +45,7 @@ const Home = () => {
   }, []);
 
   return (
-    <PageInimation>
+    <PageTransition>
       <div>
         <Heroslider />
 
@@ -59,7 +59,7 @@ const Home = () => {
               />
             ))}
       </div>
-    </PageInimation>
+    </PageTransition>
   );
 };
 
