@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import Bottomheader from "./components/header/Bottomheader"
-import Topheader from "./components/header/Topheader"
+import Bottomheader from "./components/Header/BottomHeader.jsx"
+import Topheader from "./components/Header/TopHeader.jsx"
 import Home from "./pages/home/Home.jsx"
 import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
 import Cart from "./pages/cart/Cart.jsx";
@@ -9,7 +9,7 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import { AnimatePresence } from "framer-motion";
 import CategoryPage from "./pages/CategoryPage/CategoryPage.jsx"
 import SearchResults from "./pages/SearchResults.jsx";
-import Favorites from "./pages/favorites/Favorites.jsx";
+import Favorites from "./pages/Favorites/Favorites.jsx";
 
 
 function App() {
