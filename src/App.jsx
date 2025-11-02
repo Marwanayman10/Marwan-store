@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import Bottomheader from "./components/Header/BottomHeader.jsx"
-import Topheader from "./components/Header/TopHeader.jsx"
+import BottomHeader from "./components/header/BottomHeader.jsx"
+import TopHeader from "./components/header/TopHeader.jsx"
 import Home from "./pages/home/Home.jsx"
 import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
 import Cart from "./pages/cart/Cart.jsx";
@@ -17,8 +17,8 @@ function App() {
   return (
     <>
     <header>
-      <Topheader/>
-      <Bottomheader/>
+      <TopHeader/>
+      <BottomHeader/>
     </header>
 
     <Toaster  position="bottom-right" toastOptions={{
