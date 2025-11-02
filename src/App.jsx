@@ -7,7 +7,7 @@ import Cart from "./pages/cart/Cart.jsx";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import { AnimatePresence } from "framer-motion";
-import CategoryPage from "./pages/categoryPage/CategoryPage.jsx";
+import CategoryPage from "./pages/categorypage/CategoryPage.jsx"
 import SearchResults from "./pages/SearchResults.jsx";
 import Favorites from "./pages/favorites/Favorites.jsx";
 
