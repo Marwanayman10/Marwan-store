@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import BottomHeader from "./components/header/bottom-temp.jsx"
-import TopHeader from "./components/header/TopHeader.jsx"
+import TopHeader from "./components/header/top-temp.jsx"
 import Home from "./pages/home/Home.jsx"
 import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
 import Cart from "./pages/cart/Cart.jsx";
